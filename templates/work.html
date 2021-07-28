@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Flask Templates</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <!-- Render our data -->
+      <h1>{{ text }}</h1>
+      {{ data }}
+    </div>
+    <p></p>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <a href='http://127.0.0.1:5000/all'><button>Click for all nobel data</button></a>
+      </div>
+  
+    </div>
+
+
+
+
+  <form action="#" method="post" >
+    <p>Go ahead, add yourself to the prize list:</p>
+    
+<!-- I'd like to thank W3schools for the table refresher. It has been a while since I've done any html. -->
+
+    <table>
+      <tbody>
+      <tr>
+          <td>Year:</td>
+          <td><input type="text" name="year" /></td> 
+      </tr>
+      <tr>
+          <td>Category:</td>
+          <td><input type="text" name="category" /></td> 
+      </tr>
+      <tr>
+          <td>Id:</td>
+          <td><input type="text" name="id" /></td>
+      </tr>
+      <tr>
+          <td>Firstname:</td>
+          <td><input type="text" name="firstname" /></td>
+      </tr>
+      <tr>
+          <td>Surname:</td>
+          <td><input type="text" name="surname" /></td>
+         </tr>
+      <tr>
+          <td>Motivation:</td>
+          <td><input type="text" name="motivation" /></td>
+         </tr>
+      <tr>
+          <td>Share:</td>
+          <td><input type="text" name="share" /></td>
+         </tr>
+    </tbody>
+    </table>
+      <p><input type="submit" value="submit"/></p>
+     
+  </form>
+</body>
+
+</html>
