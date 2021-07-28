@@ -63,7 +63,7 @@ def nobel_year(year):
         return redirect(url_for("nobel_year",year=year))
       
       
-      
+
 
 if __name__ == "__main__":
     app.run(debug=True)
